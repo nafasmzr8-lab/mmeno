@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کافه آویژه | منو</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;900&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- هدر منو -->
+  <header class="menu-header">
+    <div class="steam">
+      <span></span><span></span><span></span>
+    </div>
+    <h1 class="cafe-title">کافه آویژه</h1>
+   </header>
+
+  <!-- نوار جستجو و فیلتر -->
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="دنبال چی می‌گردی؟ مثلاً لاته...">
+    </div>
+
+    <div class="category-tabs" id="categoryTabs">
+      <button class="tab active" data-category="همه">همه</button>
+      <button class="tab" data-category="نوشیدنی گرم">نوشیدنی گرم</button>
+      <button class="tab" data-category="نوشیدنی سرد">نوشیدنی سرد</button>
+      <button class="tab" data-category="دسر">دسر</button>
+      <button class="tab" data-category="صبحانه">صبحانه</button>
+    </div>
+  </div>
+
+  <!-- جایی که آیتم‌های منو با جاوااسکریپت توش ساخته میشن -->
+  <main class="menu-grid" id="menuGrid"></main>
+
+  <!-- پیام برای وقتی چیزی پیدا نشد -->
+  <p class="empty-state" id="emptyState">چیزی با این مشخصات پیدا نشد ☕</p>
+
+  <footer class="menu-footer">
+    <p>کافه آویژه &mdash; هر روز، ساعت ۸ صبح تا ۱۱ شب پذیرای شماییم</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
